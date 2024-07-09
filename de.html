@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big band ZUŠ Teplice</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+        }
+        .content {
+            position: relative;
+            z-index: 100;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Přidání videa jako pozadí -->
+    <video autoplay loop muted playsinline class="video-background">
+        <source src="BBZT web background.MP4" type="video/mp4">
+        <source src="BBZT web background.ogv" type="video/ogg">
+        <source src="BBZT web background.webm" type="video/webm">
+        Ihr Browser unterstützt den Video-Tag nicht.
+    </video>
+
+    <div class="content">
+        <h1>Willkommen auf der BBZT-Website</h1>
+        <p>Dies ist eine einfache Website, die auf einem Handy erstellt wurde.</p>
+    </div>
+</body>
+</html>

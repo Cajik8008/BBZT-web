@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Big band ZUŠ Teplice</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const m = { en: 'en.html', de: 'de.html' };
+            const l = (navigator.language || navigator.userLanguage).slice(0, 2);
+            fetch('https://ipapi.co/json/')
+                .then(r => r.json())
+                .then(d => window.location.href = m[d.country_code.toLowerCase()] || m[l] || 'cs.html');
+        });
+    </script>
+</head>
+<body></body>
+</html>
